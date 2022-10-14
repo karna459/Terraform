@@ -54,6 +54,14 @@ output "security_groups" {
   value       = ["${aws_instance.web-1.*.security_groups}"]
 }
 
+
+output "security_groups" {
+  description = "List of associated security groups of instances"
+  value       = ["${aws_instance.web-1.*.security_groups}"]
+}
+
+
+
 output "vpc_security_group_ids" {
   description = "List of associated security groups of instances, if running in non-default VPC"
   value       = ["${aws_instance.web-1.*.vpc_security_group_ids}"]
