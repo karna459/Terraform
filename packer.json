@@ -49,6 +49,11 @@
             "destination": "/tmp/docker.service"
     },
     {
+            "type": "file",
+            "source": "docker.service",
+            "destination": "/tmp/docker.service"
+    },
+    {
         "type": "shell",
         "inline": [
             "sudo cp /tmp/docker.service /lib/systemd/system/docker.service",
